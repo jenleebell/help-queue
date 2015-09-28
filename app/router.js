@@ -10,3 +10,5 @@ Router.map(function() {
 });
 
 export default Router;
+
+// {path: '/question/:question_id'}
