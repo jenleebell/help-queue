@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'help-queue',
     environment: environment,
+    firebase: 'https://amazinghelpqueue.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -37,6 +38,15 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+  }
+
+  if (environment === 'production') {
+
+  }
+
+  return ENV;
+};
+NV.APP.rootElement = '#ember-testing';
   }
 
   if (environment === 'production') {
