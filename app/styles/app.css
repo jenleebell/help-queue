@@ -7,10 +7,6 @@ body {
   font-weight: 100;
 }
 
-.motto {
-  font-weight: 100;
-}
-
 .line {
   height: 5px;
   background: #000;
@@ -18,4 +14,8 @@ body {
 
 .index-body {
   margin-top: 250px;
+}
+
+.question-title {
+  text-align: center;
 }
