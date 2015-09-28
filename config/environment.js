@@ -17,8 +17,24 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com",
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'frame-src': "'none'"
+    },
+
+    googleFonts: [
+    'Roboto:100,300,400,600,700'
+    ],
+
   };
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -38,15 +54,6 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-  }
-
-  if (environment === 'production') {
-
-  }
-
-  return ENV;
-};
-NV.APP.rootElement = '#ember-testing';
   }
 
   if (environment === 'production') {

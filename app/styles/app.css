@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  text-align: center;
+  font-weight: 100;
+}
+
+.motto {
+  font-weight: 100;
+}
+
+.line {
+  height: 5px;
+  background: #000;
+}
