@@ -4,6 +4,7 @@
     "window",
     "location",
     "setTimeout",
+    "moment",
     "$",
     "-Promise",
     "define",
