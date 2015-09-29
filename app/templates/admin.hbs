@@ -1,5 +1,8 @@
 {{outlet}}
+<span class="intro">Open help tickets</span>
+<hr>
   {{#each model as |question|}}
     {{question-tile question=question}}
     <button class="btn btn-warning btn-xs" {{action 'destroyQuestion' question}}>Delete</button>
+    <hr>
   {{/each}}

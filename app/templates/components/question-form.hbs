@@ -1,6 +1,5 @@
 {{#if formShowing}}
 
-<div class="jumbotron">
 <span class="question-title"><h2>Ask a question</h2></span>
   <form>
     <div class="container">
@@ -17,10 +16,14 @@
 
       <button class="btn btn-warning" {{action 'save'}}>Submit</button>
   </form>
-</div>
 <br>
 {{else}}
 <center>
+  <span class="intro">Do you need answers? We have help.
+    <br>
+    Click the button below to request a hero.</span>
+  <br>
+  <br>
   <button class='btn btn-warning'{{action 'formShow'}}>Ask a question</button>
 </center>
 {{/if}}
