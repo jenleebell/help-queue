@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export function currentDate(params/*, hash*/) {
+export function currentDate() {
   return moment().format('LL');
 }
 
